@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ConsoleAppImproved</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ConsoleAppImproved</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ConsoleAppImproved.csproj" File="ConsoleAppImproved.csproj" ReplaceParameters="true">
+      <Folder Name="App" TargetFolderName="App">
+        <Folder Name="AppCustomization" TargetFolderName="AppCustomization">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppConfiguration.cs">AppConfiguration.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppLogger.cs">AppLogger.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppServices.cs">AppServices.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMain.cs">AppMain.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Defaults" TargetFolderName="Defaults">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggerDefaults.cs">LoggerDefaults.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <ProjectItem ReplaceParameters="true" TargetFileName="SerilogExcludeRule.cs">SerilogExcludeRule.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.local.json">appsettings.local.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IApp.cs">IApp.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
